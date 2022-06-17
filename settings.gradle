@@ -1,0 +1,39 @@
+pluginManagement {
+    //开启依赖统一功能
+    enableFeaturePreview('VERSION_CATALOGS')
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
+        maven { url 'https://jitpack.io' }
+        maven {
+            url 'http://repo.pageturner-reader.org'
+            allowInsecureProtocol = true
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    versionCatalogs {
+        libs {
+            from(files("config/libs.versions.toml"))
+        }
+    }
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
+        maven { url 'https://jitpack.io' }
+        maven {
+            url 'http://repo.pageturner-reader.org'
+            allowInsecureProtocol = true
+        }
+    }
+}
+rootProject.name = "ExceptCollect"
+//include ':app'
+include ':collect'

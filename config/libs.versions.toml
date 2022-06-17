@@ -1,0 +1,182 @@
+[versions]
+appVersionCode = "1"
+appVersionName = "1.0.0"
+authorName = "Z7Dream"
+authorMail = "zhangxyfs@126.com"
+
+applicationId = "hanvon.aebr.tools.test"
+compileSdk = "31"
+minSdk = "26"
+targetSdk = "31"
+buildToolsVersion = "32.0.0"
+jvmTarget = "1.8"
+
+testRunner = "androidx.test.runner.AndroidJUnitRunner"
+proguardFiles = "proguard-android-optimize.txt"
+consumerRules = "consumer-rules.pro"
+proguardRules = "proguard-rules.pro"
+
+kotlinJvmVersion = "1.8"
+
+activity = "1.4.0"
+appcompat = "1.4.1"
+fragment = "1.4.1"
+lifecycle = "2.4.1"
+navigation = "2.4.2"
+paging = "3.1.1"
+room = "2.5.0-alpha01" #2.4.2
+roomPage = "2.5.0-alpha01"
+work = "2.7.1"
+annotation = "1.3.0"
+annotationExp = "1.2.0"
+asynclayoutinflater = "1.0.0"
+autofill = "1.1.0"
+collection = "1.2.0"
+recyclerview = "1.2.1"
+recyclerviewSelect = "1.1.0"
+swiperefreshlayout = "1.1.0"
+androidStartup = "1.1.1"
+viewpager2 = "1.0.0"
+constraintLayout = "2.1.3"
+core = "1.7.0"
+material = "1.5.0"
+multidex = "2.0.1"
+
+junit = "4.13.2"
+testExt = "1.1.3"
+espresso = "3.4.0"
+
+jakartaMail = "2.0.1"
+jakartaMailApi = "2.1.0"
+arouter = "1.5.2"
+glide = "4.13.2"
+timber = "5.0.1"
+immersionbar = "3.2.2"
+utilcodex = "1.31.0"
+basePopup = "3.2.0"
+verticalTabLayout = "1.2.5"
+complexRadioGroup = "1.0.2"
+gson = "2.9.0"
+restrictionBypass = "2.2"
+tbs = "44181"
+jsoup = "1.15.1"
+httpcomponents = "5.1.3"
+koom = "2.2.0"
+startup = "1.1.0"
+
+[libraries]
+#androidX
+activity = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+appcompatRes = { module = "androidx.appcompat:appcompat-resources", version.ref = "appcompat" }
+fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment" }
+viewModel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+liveData = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+lifecycleKapt = { module = "androidx.lifecycle:lifecycle-compiler", version.ref = "lifecycle" }
+lifecycleJava8 = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "lifecycle" }
+lifecycleService = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycle" }
+navigationFrag = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+navigationUi = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+navigationDynamic = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "navigation" }
+paging = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+room = { module = "androidx.room:room-runtime", version.ref = "room" }
+roomKapt = { module = "androidx.room:room-compiler", version.ref = "room" }
+roomPage = { module = "androidx.room:room-paging", version.ref = "roomPage" }
+roomKtx = { module = "androidx.room:room-ktx", version.ref = "room" }
+work = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+annotationExp = { module = "androidx.annotation:annotation-experimental", version.ref = "annotationExp" }
+asynclayoutinflater = { module = "androidx.asynclayoutinflater:asynclayoutinflater", version.ref = "asynclayoutinflater" }
+autofill = { module = "androidx.autofill:autofill", version.ref = "autofill" }
+collection = { module = "androidx.collection:collection-ktx", version.ref = "collection" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+recyclerviewSelect = { module = "androidx.recyclerview:recyclerview-selection", version.ref = "recyclerviewSelect" }
+swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
+androidStartup = { module = "androidx.startup:startup-runtime", version.ref = "androidStartup" }
+viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+constraintLayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintLayout" }
+core = { module = "androidx.core:core-ktx", version.ref = "core" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
+
+
+#test
+junit = { module = "junit:junit", version.ref = "junit" }
+testExt = { module = "androidx.test.ext:junit", version.ref = "testExt" }
+espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+
+#https://github.com/eclipse-ee4j/mail
+jakartaMail = { module = "com.sun.mail:jakarta.mail", version.ref = "jakartaMail" }
+jakartaMailApi = { module = "jakarta.mail:jakarta.mail-api", version.ref = "jakartaMailApi" }
+#https://github.com/alibaba/ARouter
+arouter = { module = "com.alibaba:arouter-api", version.ref = "arouter" }
+arouterKapt = { module = "com.alibaba:arouter-compiler", version.ref = "arouter" }
+#https://github.com/bumptech/glide
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glideKapt = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+glideOkhttp3 = { module = "com.github.bumptech.glide:okhttp3-integration", version.ref = "glide" }
+#https://github.com/JakeWharton/timber
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+#https://github.com/gyf-dev/ImmersionBar
+immersionbar = { module = "com.geyifeng.immersionbar:immersionbar", version.ref = "immersionbar" }
+immersionbarKtx = { module = "com.geyifeng.immersionbar:immersionbar-ktx", version.ref = "immersionbar" }
+#https://github.com/Blankj/AndroidUtilCode/blob/master/lib/utilcode/README-CN.md
+utilcodex = { module = "com.blankj:utilcodex", version.ref = "utilcodex" }
+basePopup = { module = "io.github.razerdp:BasePopup", version.ref = "basePopup" }
+#https://github.com/qstumn/VerticalTabLayout
+verticalTabLayout = { module = "q.rorbin:VerticalTabLayout", version.ref = "verticalTabLayout" }
+#https://github.com/zhangxyfs/ComplexRadioGroup
+complexRadioGroup = { module = "com.github.zhangxyfs:ComplexRadioGroup", version.ref = "complexRadioGroup" }
+#https://github.com/google/gson
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+#https://github.com/ChickenHook/RestrictionBypass
+restrictionBypass = { module = "com.github.ChickenHook:RestrictionBypass", version.ref = "restrictionBypass" }
+#https://x5.tencent.com/docs/access.html
+tbs = { module = "com.tencent.tbs:tbssdk", version.ref = "tbs" }
+#https://github.com/jhy/jsoup
+jsoup = { module = "org.jsoup:jsoup", version.ref = "jsoup" }
+#https://github.com/apache/httpcomponents-client
+httpclient5 = { module = "org.apache.httpcomponents.client5:httpclient5", version.ref = "httpcomponents" }
+#https://github.com/KwaiAppTeam/KOOM
+koomJavaLeak = { module = "com.kuaishou.koom:koom-java-leak-static", version.ref = "koom" }
+koomNativeLeak = { module = "com.kuaishou.koom:koom-native-leak-static", version.ref = "koom" }
+koomThreadLeak = { module = "com.kuaishou.koom:koom-thread-leak-static", version.ref = "koom" }
+koomBase = { module = "com.kuaishou.koom:koom-monitor-base-static", version.ref = "koom" }
+koomxHook = { module = "com.kuaishou.koom:xhook-static", version.ref = "koom" }
+#https://github.com/idisfkj/android-startup
+startup = {module = "io.github.idisfkj:android-startup", version.ref = "startup"}
+
+
+
+[bundles]
+androidXBundles = [
+    "activity", "appcompat", "appcompatRes", "fragment", "navigationFrag", "navigationUi", "navigationDynamic",
+    "paging", "work", "annotation", "annotationExp", "asynclayoutinflater", "autofill", "collection",
+    "recyclerview", "recyclerviewSelect", "swiperefreshlayout", "viewpager2", "constraintLayout",
+    "core", "material", "viewModel", "liveData", "lifecycleJava8", "lifecycleService", "multidex"
+]
+
+
+roomBundles = [
+    "room", "roomPage", "roomKtx"
+]
+
+immersionbarBundles = [
+    "immersionbar", "immersionbarKtx"
+]
+
+libBundles = [
+    "jakartaMail", "jakartaMailApi", "arouter", "glide", "glideOkhttp3"
+]
+
+testBundles = [
+    "junit"
+]
+
+androidTestBundles = [
+    "testExt", "espresso"
+]
+
+koomBundles = [
+    "koomJavaLeak", "koomNativeLeak", "koomThreadLeak", "koomBase", "koomxHook"
+]

@@ -1,0 +1,61 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs'
+}
+
+android {
+    compileSdk libs.versions.compileSdk.get().toInteger()
+
+    defaultConfig {
+        minSdk libs.versions.minSdk.get().toInteger()
+        targetSdk libs.versions.targetSdk.get().toInteger()
+
+        testInstrumentationRunner libs.versions.testRunner.get()
+        consumerProguardFiles libs.versions.consumerRules.get()
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile(libs.versions.proguardFiles.get()), libs.versions.proguardRules.get()
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = libs.versions.kotlinJvmVersion.get()
+    }
+
+    viewBinding {
+        enabled true
+    }
+
+    lintOptions {
+        checkDependencies true
+        abortOnError false
+        lintConfig file("$rootProject.projectDir/config/lint/lint.xml")
+    }
+}
+
+dependencies {
+    api fileTree(includes: ['*.jar','*.aar'], dir: "libs")
+
+    implementation(libs.bundles.androidXBundles)
+    implementation(libs.bundles.roomBundles)
+    implementation(libs.timber)
+    implementation(libs.startup)
+
+    testImplementation(libs.bundles.testBundles)
+    androidTestImplementation(libs.bundles.androidTestBundles)
+
+    kapt libs.lifecycleKapt
+    kapt libs.roomKapt
+}
