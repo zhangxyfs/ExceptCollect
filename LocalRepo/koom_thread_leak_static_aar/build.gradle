@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('koom-thread-leak-static-2.2.0.aar'))

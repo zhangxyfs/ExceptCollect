@@ -37,3 +37,12 @@ dependencyResolutionManagement {
 rootProject.name = "ExceptCollect"
 //include ':app'
 include ':collect'
+include ':LocalRepo:koom_fast_dump_static_aar'
+include ':LocalRepo:koom_java_leak_static_aar'
+include ':LocalRepo:koom_monitor_base_static_aar'
+include ':LocalRepo:koom_native_leak_static_aar'
+include ':LocalRepo:koom_thread_leak_static_aar'
+include ':LocalRepo:kuai_unwind_static_aar'
+include ':LocalRepo:kwai_android_base_static_aar'
+include ':LocalRepo:xhook_static_aar'
+include ':LocalRepo:base_jar'

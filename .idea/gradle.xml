@@ -10,6 +10,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/LocalRepo" />
+            <option value="$PROJECT_DIR$/LocalRepo/base_jar" />
+            <option value="$PROJECT_DIR$/LocalRepo/koom_fast_dump_static_aar" />
+            <option value="$PROJECT_DIR$/LocalRepo/koom_java_leak_static_aar" />
+            <option value="$PROJECT_DIR$/LocalRepo/koom_monitor_base_static_aar" />
+            <option value="$PROJECT_DIR$/LocalRepo/koom_native_leak_static_aar" />
+            <option value="$PROJECT_DIR$/LocalRepo/koom_thread_leak_static_aar" />
+            <option value="$PROJECT_DIR$/LocalRepo/kuai_unwind_static_aar" />
+            <option value="$PROJECT_DIR$/LocalRepo/kwai_android_base_static_aar" />
+            <option value="$PROJECT_DIR$/LocalRepo/xhook_static_aar" />
             <option value="$PROJECT_DIR$/collect" />
           </set>
         </option>

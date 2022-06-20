@@ -2,7 +2,6 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-    id 'androidx.navigation.safeargs'
 }
 
 android {
@@ -18,12 +17,8 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile(libs.versions.proguardFiles.get()), libs.versions.proguardRules.get()
-        }
-        debug {
-            applicationIdSuffix ".debug"
             minifyEnabled false
+            proguardFiles getDefaultProguardFile(libs.versions.proguardFiles.get()), libs.versions.proguardRules.get()
         }
     }
     compileOptions {
@@ -46,16 +41,18 @@ android {
 }
 
 dependencies {
-    api fileTree(includes: ['*.jar','*.aar'], dir: "libs")
+    api project(":LocalRepo:koom_fast_dump_static_aar")
+    api project(":LocalRepo:koom_java_leak_static_aar")
+    api project(":LocalRepo:koom_monitor_base_static_aar")
+    api project(":LocalRepo:koom_native_leak_static_aar")
+    api project(":LocalRepo:koom_thread_leak_static_aar")
+    api project(":LocalRepo:kuai_unwind_static_aar")
+    api project(":LocalRepo:kwai_android_base_static_aar")
+    api project(":LocalRepo:xhook_static_aar")
+    api project(":LocalRepo:base_jar")
 
-    implementation(libs.bundles.androidXBundles)
-    implementation(libs.bundles.roomBundles)
-    implementation(libs.timber)
-    implementation(libs.startup)
-
-    testImplementation(libs.bundles.testBundles)
-    androidTestImplementation(libs.bundles.androidTestBundles)
+    api(libs.bundles.androidXBundles)
+    api(libs.startup)
 
     kapt libs.lifecycleKapt
-    kapt libs.roomKapt
 }
