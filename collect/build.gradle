@@ -41,15 +41,15 @@ android {
 }
 
 dependencies {
-    implementation project(":LocalRepo:koom_fast_dump_static_aar")
-    implementation project(":LocalRepo:koom_java_leak_static_aar")
-    implementation project(":LocalRepo:koom_monitor_base_static_aar")
-    implementation project(":LocalRepo:koom_native_leak_static_aar")
-    implementation project(":LocalRepo:koom_thread_leak_static_aar")
-    implementation project(":LocalRepo:kuai_unwind_static_aar")
-    implementation project(":LocalRepo:kwai_android_base_static_aar")
-    implementation project(":LocalRepo:xhook_static_aar")
-    implementation project(":LocalRepo:base_jar")
+    api project(":LocalRepo:koom_fast_dump_static_aar")
+    api project(":LocalRepo:koom_java_leak_static_aar")
+    api project(":LocalRepo:koom_monitor_base_static_aar")
+    api project(":LocalRepo:koom_native_leak_static_aar")
+    api project(":LocalRepo:koom_thread_leak_static_aar")
+    api project(":LocalRepo:kuai_unwind_static_aar")
+    api project(":LocalRepo:kwai_android_base_static_aar")
+    api project(":LocalRepo:xhook_static_aar")
+    api project(":LocalRepo:base_jar")
 
     implementation(libs.startup)
     implementation(libs.coroutines)
