@@ -5,6 +5,6 @@ repositories {
 }
 
 dependencies {
-  implementation('com.github.zhangxyfs:ExceptCollect:1.0.2')
+  implementation('com.github.zhangxyfs:ExceptCollect:1.01')
 }
 ```
