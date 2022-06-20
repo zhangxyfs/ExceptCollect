@@ -1,7 +1,10 @@
 # ExceptCollect
 ```
-maven { url 'https://jitpack.io' }
+repositories {
+  maven { url 'https://jitpack.io' }
+}
 
-
-implementation('com.github.zhangxyfs:ExceptCollect:v1.01')
+dependencies {
+  implementation('com.github.zhangxyfs:ExceptCollect:1.0.2')
+}
 ```
