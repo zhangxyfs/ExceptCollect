@@ -5,6 +5,12 @@ import hanvon.aebr.tools.exception.collect.ExceptCollectManager
 
 class CollectConfig {
     /**
+     * 是否开启debug模式
+     */
+    var isDebug: Boolean = true
+        private set
+
+    /**
      * 使用 java 监听
      */
     var usedJavaLeaker: Boolean = true
@@ -62,6 +68,11 @@ class CollectConfig {
      */
     var threadLoopInterval: Long = 30_000L
         private set
+
+    fun isDebug(b: Boolean = isDebug) = kotlin.run {
+        isDebug = b
+        this
+    }
 
     fun usedJavaLeaker(b: Boolean = usedJavaLeaker) = kotlin.run {
         usedJavaLeaker = b

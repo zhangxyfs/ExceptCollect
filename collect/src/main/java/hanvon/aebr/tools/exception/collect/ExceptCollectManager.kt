@@ -1,7 +1,6 @@
 package hanvon.aebr.tools.exception.collect
 
 import android.app.Application
-import androidx.multidex.BuildConfig
 import com.rousetime.android_startup.StartupManager
 import com.rousetime.android_startup.model.LoggerLevel
 import com.rousetime.android_startup.model.StartupConfig
@@ -34,7 +33,7 @@ class ExceptCollectManager private constructor() {
             .setConfig(
                 StartupConfig.Builder()
                     .setLoggerLevel(
-                        if (BuildConfig.DEBUG) {
+                        if (config.isDebug) {
                             LoggerLevel.DEBUG
                         } else {
                             LoggerLevel.NONE

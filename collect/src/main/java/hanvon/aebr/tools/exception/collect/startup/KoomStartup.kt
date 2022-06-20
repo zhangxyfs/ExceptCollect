@@ -2,7 +2,6 @@ package hanvon.aebr.tools.exception.collect.startup
 
 import android.app.Application
 import android.content.Context
-import androidx.multidex.BuildConfig
 import com.kwai.koom.base.DefaultInitTask
 import com.kwai.koom.base.MonitorLog
 import com.kwai.koom.base.MonitorManager
@@ -57,7 +56,7 @@ class KoomStartup(private val conf: CollectConfig, private val call: () -> Appli
             return
         }
 
-        val config = if (BuildConfig.DEBUG) {
+        val config = if (conf.isDebug) {
             javaTestConfig()
         } else {
             javaConfig()
